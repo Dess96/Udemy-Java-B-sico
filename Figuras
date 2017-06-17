@@ -1,0 +1,8 @@
+/*Clase padre de la clase Circulo
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class Figuras{
+  public void dibujar(){
+    System.out.println("Figura");
+  }
+}
