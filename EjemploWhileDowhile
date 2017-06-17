@@ -1,0 +1,30 @@
+/*Ejemplo sobre el uso del while y el do while
+ * Autora: Denisse Alfaro
+ * 2017*/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class EjemploWhileDowhile{
+  public static void main(String[] args) throws Exception{
+    int vuelta = 0;
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("¿Quiere que repita? s|n");
+    String res = br.readLine();
+    
+    
+    while(res.equals("s")){
+      System.out.println("Repitiendo!!");
+      System.out.println("¿Quiere que repita? s|n");
+      res = br.readLine();
+    }
+    
+    do{
+      vuelta++;
+      System.out.println("Vuelta número: " +vuelta);
+      System.out.println("¿Quiere que repita? s|n");
+      res = br.readLine();
+      
+    }while(res.equals("s"));
+  }
+}
