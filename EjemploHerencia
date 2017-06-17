@@ -1,0 +1,10 @@
+/*Main del ejemplo con la clase Circulo y la clase Herencia
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjemploHerencia{
+  
+  public static void main(String[] args){
+    Circulo c = new Circulo();
+    c.dibujar();
+  }
+}
