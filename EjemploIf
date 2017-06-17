@@ -1,0 +1,13 @@
+/*Ejemplo de un if
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjemploIf{
+  public static void main(String[] args){
+    int a = 1;
+    if(a > 2){
+      System.out.println("a es mayor a dos");
+    }else{
+      System.out.println("a es menor que dos");
+    }
+  }
+}
