@@ -1,0 +1,14 @@
+/*Clase que mete lo que el usuario digita en una variable string
+ * Autora: Denisse Alfaro
+ * 2017*/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class EjemploEntradaSalida{
+    public static void main(String[] args) throws Exception{
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      String s = br.readLine();
+      System.out.println("La variable s es " +s);
+    }
+}
