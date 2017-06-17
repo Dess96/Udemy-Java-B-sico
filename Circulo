@@ -1,0 +1,9 @@
+/*Clase Circulo que hereda de la clase Figuras
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class Circulo extends Figuras{
+  
+  public void dibujar(){
+    System.out.println("Circulo");
+  }
+}
