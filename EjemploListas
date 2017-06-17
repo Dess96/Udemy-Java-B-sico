@@ -1,0 +1,19 @@
+/*Ejemplo de un arraylist en Java
+ * Autora: Denisse Alfaro
+ * 2017*/
+import java.util.List;
+import java.util.ArrayList;
+
+public class EjemploListas{
+  
+   public static void main(String[] args){
+     
+     Peliculas p1 = new Peliculas();
+     Peliculas p2 = new Peliculas();
+     
+     List<Peliculas> lista;
+     lista = new ArrayList<Peliculas>(); //Puede no escribirse la palabra Peliculas en esta instruccion
+     lista.add(p1); //Se añaden los objetos al arraylist
+     lista.add(p2);
+   }
+}
