@@ -1,0 +1,16 @@
+/*Ejemplo sobre la precedencia de operadores
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjemploPrecedencia{
+  public static void main(String[] args){
+    int a = 5;
+    int b = 2;
+    int c = 3;
+    
+    int r = a+b*c;
+    System.out.println("El valor de r es: " +r);
+    
+    r = (a+b)*c;
+    System.out.println("El valor de r es: " +r);
+  }
+}
