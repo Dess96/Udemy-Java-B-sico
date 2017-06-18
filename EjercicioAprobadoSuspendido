@@ -1,0 +1,51 @@
+/*Ejercicio. El programa le muestra su estado basado en su nota
+ * Autora: Denisse Alfaro
+ * 2017*/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class EjercicioAprobadoSuspendido{
+  public static void main(String[] args) throws Exception{
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Digite una nota entre 0 y 10");
+    int nota = Integer.parseInt(br.readLine());
+    switch(nota){
+      case 0:
+        System.out.println("Suspendido");
+        break;
+      case 1:
+        System.out.println("Suspendido");
+        break;
+      case 2:
+        System.out.println("Suspendido");
+        break;
+      case 3:
+        System.out.println("Suspendido");
+        break;
+      case 4:
+        System.out.println("Suspendido");
+        break;
+      case 5:
+        System.out.println("Aprobado");
+        break;
+      case 6:
+        System.out.println("Aprobado");
+        break;
+      case 7:
+        System.out.println("Notable");
+        break;
+      case 8:
+        System.out.println("Notable");
+        break;
+      case 9:
+        System.out.println("Sobresaliente");
+        break;
+      case 10:
+        System.out.println("Sobresaliente");
+        break;
+      default:
+        System.out.println("Error. El número no está en el rango.");
+    }
+  }
+}
