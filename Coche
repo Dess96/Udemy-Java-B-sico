@@ -1,0 +1,28 @@
+/*Ejercicio. Objeto tipo coche
+ * Autora: Denisse Alfaro
+ * 2017*/
+import java.util.List;
+import java.util.ArrayList;
+
+public class Coche{
+  private List<Rueda> ruedas = null; //Se crea una lista para cada atributo
+  private List<Puerta> puerta = null;
+  private List<Motor> motor = null;
+  
+  public Coche(){
+    ruedas = new ArrayList(); //Se inicializa
+    puerta = new ArrayList();
+    motor = new ArrayList();
+    
+    for(int i=0; i <4; i++){ //Se meten cuatro ruedas a la lista, un motor y cuatro puertas
+      ruedas.add(new Rueda());
+    }
+    
+    motor.add(new Motor());
+    
+    for(int j=0; j <4; j++){
+      puerta.add(new Puerta());
+    }
+  }
+
+}
