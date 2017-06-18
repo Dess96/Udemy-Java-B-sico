@@ -1,0 +1,9 @@
+/*Ejercicio. Crea un objeto tipo coche
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjercicioCoche{
+  
+  public static void main(String[] args){
+    Coche c =  new Coche();
+  }
+}
