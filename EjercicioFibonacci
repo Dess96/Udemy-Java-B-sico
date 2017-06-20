@@ -1,0 +1,23 @@
+/*Programa que muestra la sucesion de Fibonacci que se obtiene sumando los dos números anteriores. Las condiciones iniciales son 1 y 1.
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjercicioFibonacci{
+  
+  public static int fibo(int n){
+    if(n == 0){
+      return 0;
+    }else if(n == 1){
+      return 1;
+    }else{
+      return (fibo(n-1) + fibo(n-2));
+    }
+  }
+  
+  public static void main(String[] args){
+    int n;
+    n = 8;
+    for(int i=0; i <= n; i++){
+      System.out.println(fibo(i));
+    }
+  }
+}
