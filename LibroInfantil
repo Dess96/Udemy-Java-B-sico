@@ -1,4 +1,5 @@
 /*Clase para EjercicioLibroInfantil. Tiene un set y get para la edad recomendada y un metodo que verifica si el libro es recomendado
+ * Hereda de la clase libro por lo que tambien tiene sus metodos
  * Autora: Denisse Alfaro 
  * 2017*/
 public class LibroInfantil extends Libro{
