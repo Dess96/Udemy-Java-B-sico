@@ -1,0 +1,37 @@
+/*Programa que muestra si es dia, tarde o noche segun la hora y minutos ingresados
+ * Autora: Denisse Alfaro
+ * 2017*/
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class EjercicioHoraDia{
+  public static void main(String[] args) throws Exception{
+    int h;
+    int min;
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    
+    System.out.println("Digite una hora con el formato de 24 horas.");
+    String s = br.readLine();
+    System.out.println("Digite los minutos con el mismo formato.");
+    String s1 = br.readLine();
+    h = Integer.parseInt(s);
+    min = Integer.parseInt(s1);
+    
+    if((h == 12 && min == 0) || (h == 24 && min == 0)){
+      System.out.println("Son las 12 :)");
+    
+    }else if(h >= 6 && h <= 11){
+      System.out.println("Mañana");
+    
+    }else if(h >= 12 && h <= 18){
+      System.out.println("Tarde");
+    
+    }else if(h >= 19 && h <= 24){
+      System.out.println("Noche");
+    
+    }else if(h >= 1 && h <= 5){
+      System.out.println("Madrugada");
+    }
+  }
+}
