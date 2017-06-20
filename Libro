@@ -1,0 +1,65 @@
+/*Clases para EjercicioLibroInfantil. Metodos set y get para cada uno de sus atributos y metodo abrir y cerrar.
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class Libro{
+  protected String titulo;
+  protected String isbn;
+  protected boolean abierto;
+  protected int numPags;
+  protected int pagAct;
+  
+  public Libro(){
+    abierto = false;
+    pagAct = 0;
+  }
+  
+  public String getTitulo(){
+    return titulo;
+  }
+  
+  public void setTitulo(String titulo){
+    this.titulo = titulo;
+  }
+  
+  public String getIsbn(){
+    return isbn;
+  }
+  
+  public void setIsbn(String isbn){
+    this.isbn = isbn;
+  }
+  
+  public boolean getAbierto(){
+    return abierto;
+  }
+  
+  public void setAbierto(boolean abierto){
+    this.abierto = abierto;
+  }
+  
+  public int getNumPags(){
+    return numPags;
+  }
+  
+  public void setNumPags(int numPags){
+    this.numPags = numPags;
+  }
+  
+  public int getPagAct(){
+    return pagAct;
+  }
+  
+  public void setPagAct(int pagAct){
+    this.pagAct = pagAct;
+  }
+  
+  public void abrir(){
+    abierto = true;
+    System.out.println("El libro se ha abierto.");
+  }
+  
+  public void cerrar(){
+    abierto = false;
+    System.out.println("El libro se ha cerrado.");
+  }
+}
