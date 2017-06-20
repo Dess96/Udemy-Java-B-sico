@@ -1,0 +1,25 @@
+/*Funcion que muestra los primos del 1 al 1000. Hubiera sido mejor implementarlo con un while para no hacer todo un ciclo innecesariamente.
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjercicioFuncionPrimos{
+  
+  public static boolean EsPrimo(int a){
+    boolean primo = true;
+    for(int i = 2; i < a; i++){ //Es mejor un while porque no hay que llegar al final
+      if(a%i == 0){
+        primo = false;
+      }
+    }
+    return primo;
+  }
+  
+  public static void main(String[] args){
+    boolean resul;
+    for(int i = 1; i <= 1000; i++){
+      resul = EsPrimo(i);
+      if(resul == true){
+        System.out.println(i);
+      }
+    }
+  }
+}
