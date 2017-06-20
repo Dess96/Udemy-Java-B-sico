@@ -1,0 +1,21 @@
+/*Main para la clase Libro y la clase LibroInfantil. Se invocan los metodos abrir, cerrar, es recomendada y setedadrecomendada
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjercicioLibroInfantil{
+  
+  public static void main(String[] args){
+    LibroInfantil lb = new LibroInfantil();
+    lb.abrir();
+    lb.cerrar();
+    lb.esRecomendada(5);
+    lb.setEdadRecomendada(3);
+    
+    System.out.println(lb.esRecomendada(5));
+    
+    if(lb.esRecomendada(5) == true){
+      System.out.println("Es recomendable");
+    }else{
+      System.out.println("NO es recomendable");
+    }
+  }
+}
