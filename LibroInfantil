@@ -1,0 +1,28 @@
+/*Clase para EjercicioLibroInfantil. Tiene un set y get para la edad recomendada y un metodo que verifica si el libro es recomendado
+ * Autora: Denisse Alfaro 
+ * 2017*/
+public class LibroInfantil extends Libro{
+  private int edadRecomendada;
+  
+  public LibroInfantil(){
+    edadRecomendada = 18;
+  }
+  public boolean esRecomendada(int edadNinyo){
+    boolean recomend;
+    if(edadNinyo < edadRecomendada){
+      recomend = false;
+    }else{
+      recomend = true;
+    }
+    return recomend;
+  }
+  
+  public int getEdadRecomendada(){
+    return edadRecomendada;
+  }
+  
+  public void setEdadRecomendada(int edadRecomendada){
+    this.edadRecomendada = edadRecomendada;
+  }
+  
+}
