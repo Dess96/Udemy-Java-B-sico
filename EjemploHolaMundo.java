@@ -1,0 +1,9 @@
+/*Hola Mundo
+ * Autora: Denisse Alfaro
+ * 2017*/
+public class EjemploHolaMundo{
+  
+  public static void main(String[] args){
+    System.out.println("Hola mundo :)");
+  }
+}
